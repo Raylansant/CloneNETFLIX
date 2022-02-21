@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* ta jogo da velha "#" pq ele é um ID e não uma CLASS */
+#container{
+    width: 100% ;
+    height: 100vh;
+    background-image: url(/img/background.jpg);
+    display: flex; /* Alinha todas as divs lado a lado */  
+    align-items: center; /*  */  
+    justify-content: center;
+    }
+
+.logo{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 150px
+}
+
+.form{
+    width: 350px;
+    height: 500px;
+    background: rgba(0,0,0,0.8);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.title{
+    margin: 0 150px 80px 0;
+    font-family: 'Poppins';
+    font-size: 24px; 
+}
+
+.email{
+    width: 220px;
+    padding: 13px;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    bottom: 60px;
+}
+
+.email::placeholder{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.password{
+    width: 220px;
+    padding: 13px;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    bottom: 45px;
+}
+
+.password::placeholder{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.btn-signIn{
+    width: 220px;
+    padding: 9px;
+    border: none;
+    color: #fff;
+    background: #E90616;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    cursor: pointer; /* mudar a imagem do mouse para o dedinho quando passar pelo botão */  
+    transition: filter 0.5s; /* mudar um pouco a cor quando passar o mouse */  
+}
+
+.btn-signIn:hover{
+    filter: brightness(0.8) /* auxilia o filter na mudança das cores */  
+}
+
+.check{
+    display: flex;
+    margin-top: 10px
+}
+
+.checkbox{
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 28px
+}
+
+.remenverCheck{
+font-size: 13px;
+color: #fff;
+margin-right: 10px;
+}
+
+.needCheck{
+font-size:  13px;
+color: #fff;
+}
+
+.face{
+display: flex;
+margin-top: 15px;
+flex-direction: column;
+}
+
+.img-face{
+width: 16px;
+position: relative;
+right: 28px;
+top: 18px;
+cursor: pointer;
+}
+
+.faceText{
+font-size: 12px;
+color:#aaaaaa;
+font-family: 'Poppins';
+margin: 2px 7px 0 0;
+margin-bottom: 10px
+}
+
+.footer{
+    margin-top: 6px;
+    max-width: 280px;
+}
+
+
+.new{
+margin-left: 37px;
+font-size: 12px;
+color:#aaaaaa;
+font-family: 'Poppins';
+}
+
+.new strong{
+    color: #fff;
+}
+
+.footer p{
+font-size: 12px;
+color:#aaaaaa;
+font-family: 'Poppins';
+margin-top: 10px;
+margin-left: 37px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
